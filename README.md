@@ -2,21 +2,21 @@
 
 https://youtu.be/24xpTmaPOdY
 
-## API and Context Keys are needed.
+## API and Context Keys are needed:
 
-API Key, allows to use Google API - https://developers.google.com/custom-search/v1/using_rest
+API Key, allows to use Google API - https://developers.google.com/custom-search/v1/using_rest <br />
 Context Key - https://cse.google.com/cse/create/new
 
 ## EITHER
 
-deploy using https://vercel.com/ and use environment variables to encrypt the API and Context keys https://vercel.com/docs/environment-variables#environments
+Deploy using https://vercel.com/ and use environment variables to encrypt the API and Context keys https://vercel.com/docs/environment-variables#environments
 
 ## OR
+-Edit the search.js file: <br />
+Comment in the import at top <br />
+process.env.API_KEY -> API_KEY <br />
+process.env.CONTEXT_KEY -> CONTEXT_KEY <br />
 
-edit the search.js file:
-process.env.API_KEY -> API_KEY
-process.env.CONTEXT_KEY -> CONTEXT_KEY
-
-AND create a keys.js file with information below:
-export const API_KEY = '';
-export const CONTEXT_KEY = '';
+-Create a keys.js file with information below: <br />
+export const API_KEY = ''; <br />
+export const CONTEXT_KEY = ''; <br />
