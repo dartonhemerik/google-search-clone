@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Google-Lite Clone with Tailwind CSS & NEXT.JS! (Responsive, SSR React, Pagination) -- Tutorial with Sonny Sangha
 
-## Getting Started
+https://youtu.be/24xpTmaPOdY
 
-First, run the development server:
+## API and Context Keys are needed.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+API Key, allows to use Google API - https://developers.google.com/custom-search/v1/using_rest
+Context Key - https://cse.google.com/cse/create/new
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## EITHER
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+deploy using https://vercel.com/ and use environment variables to encrypt the API and Context keys https://vercel.com/docs/environment-variables#environments
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## OR
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+edit the search.js file:
+process.env.API_KEY -> API_KEY
+process.env.CONTEXT_KEY -> CONTEXT_KEY
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+AND create a keys.js file with information below:
+export const API_KEY = '';
+export const CONTEXT_KEY = '';
